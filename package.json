@@ -1,0 +1,57 @@
+{
+  "name": "HFL_Site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^3.6.2",
+    "autoprefixer": "^9.4.4",
+    "axios": "^0.18.1",
+    "css-loader": "^2.0.0",
+    "is-mobile": "^2.0.0",
+    "jquery": "^3.4.1",
+    "material-ui": "^0.20.2",
+    "node-sass": "^4.13.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "ramda": "^0.26.1",
+    "react-bootstrap": "^0.32.4",
+    "react-card-flip": "^0.3.0",
+    "react-helmet": "^5.2.0",
+    "react-player": "^1.7.1",
+    "react-popup": "^0.9.2",
+    "react-responsive-carousel": "^3.1.43",
+    "react-router-dom": "^4.3.1",
+    "react-share": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "weak-key": "^1.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "dev": "webpack --mode development  ./Backend/frontend/src/index.js --output ./Backend/frontend/static/frontend/main.js --watch",
+    "build": "webpack --mode production  ./Backend/frontend/src/index.js --output ./Backend/frontend/static/frontend/main.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cglane/hfl-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cglane/hfl-2/issues"
+  },
+  "homepage": "https://github.com/cglane/hfl-2#readme"
+}
