@@ -82,9 +82,6 @@
 <loc>https://hflcharleston.com/estate_property/1980-Longcreek-Road</loc>
 </url>
 <url>
-<loc>https://hflcharleston.com/estate_property/0-Black-Pond-Road</loc>
-	</url>
-<url>
 <loc>https://hflcharleston.com/estate_property/Pigeon-Pond</loc>
 	</url>
 <url>
@@ -94,7 +91,13 @@
 <loc>https://hflcharleston.com/estate_property/6555-Southmount</loc>
 	</url>
 <url>
-<loc>https://hflcharleston.com/estate_property/6001-Selkirk-Plantation-Road</loc>
+<loc>https://.hflcharleston.com/estate_property/French-Quarter-Creek-Tract</loc>
+	</url>
+<url>
+<loc>https://hflcharleston.com/estate_property/WeeNee-Tract</loc>
+	</url>
+<url>
+<loc>https://hflcharleston.com/estate_property/5993-Selkirk-Plantation-Road</loc>
 	</url>
 <url>
 <loc>https://hflcharleston.com/estate_property/Palmetto-Plantation</loc>
@@ -119,6 +122,12 @@
 <url>
 <loc>https://hflcharleston.com/estate_property/4236-Pace-Street-Suite-B</loc>
 	</url>
+<url>
+<loc>https://hflcharleston.com/estate_property/87-D-Hasell-Street</loc>
+	</url>
+<url>
+<loc>https://hflcharleston.com/estate_property/1042-Legrand-Boulevard</loc>
+	</url>
 	<url>
 		<loc>https://hflcharleston.com/residential-listings</loc>
 	</url>
@@ -134,7 +143,6 @@
  	<url>
 		<loc>https://hflcharleston.com/estate_property/4-Breakaway-Trail</loc>
  	 </url>
-
 <url>
 <loc>https://hflcharleston.com/estate_property/Bonnie-Doone</loc>
 	</url>
@@ -154,10 +162,10 @@
 		<loc>https://hflcharleston.com/estate_property/Cox-Point</loc>
 	</url>
 	<url>
-		<loc>https://hflcharleston.com/estate_property/Little-Edisto-Farm-513-Acres</loc>
+	<loc>https://hflcharleston.com/estate_property/Little-Edisto-Farm-513-Acres</loc>
 	</url>
 	<url>
-		<loc> https://hflcharleston.com/estate_property/The-Bluff-Plantation-on-the-Cooper-River</loc>
+		<loc>https://hflcharleston.com/estate_property/The-Bluff-Plantation-on-the-Cooper-River</loc>
 	</url>
 	<url>
 		<loc> https://hflcharleston.com/estate_property/1499-Ravens-Bluff-Road</loc>
@@ -169,13 +177,13 @@
 		<loc> https://hflcharleston.com/estate_property/Derry-Plantation</loc>
 	</url>
 	<url>
-		<loc> https://hflcharleston.com/estate_property/Longbrow-Paul-&-Dalton-Plantation</loc>
+	<loc>https://hflcharleston.com/estate_property/Longbrow-Paul-&-Dalton-Plantation</loc>
 	</url>
 	<url>
 		<loc> https://hflcharleston.com/estate_property/1-Harts-Bluff-Road</loc>
 	</url>
 	<url>
-		<loc> https://hflcharleston.com/estate_property/Cheeha-Combahee-Plantation</loc>
+	<loc>https://hflcharleston.com/estate_property/Cheeha-Combahee-Plantation</loc>
 	</url>
 	<url>
 		<loc> https://hflcharleston.com/estate_property/0-Cherry-Point-Road</loc>
@@ -207,7 +215,11 @@
 <url>
 		<loc>https://hflcharleston.com/estate_property/5881-Bears-Bluff-Road</loc>
 	</url>
+<url>
+		<loc>https://hflcharleston.com/estate_property/2861-Anchor-Watch</loc>
+	</url>
 
 
 </urlset>
+
 
