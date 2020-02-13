@@ -12,9 +12,9 @@
 #git commit -m 'deploy'
 
 #
-# cd ./Backend
+ cd ./Backend
 
-# eb deploy staging
+ eb deploy staging
 
 
 
