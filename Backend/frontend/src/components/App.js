@@ -19,7 +19,7 @@ const LandingPage = () => {
   $('body, html').css({'overflow-y': 'hidden'})
   return (
     <DataProvider endpoint="api/landing-content"
-                  render={data => 
+                  render={data =>
                     <div>
                        <Helmet>
                         <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -55,7 +55,7 @@ const LandPage = () => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider firstparam='Land' endpoint="api/listings"
-    render={data => 
+    render={data =>
       <div>
             <Helmet>
               <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -71,7 +71,7 @@ const CommercialPage = () => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider firstparam='Commercial' endpoint="api/listings"
-    render={data => 
+    render={data =>
       <div>
             <Helmet>
               <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -87,7 +87,7 @@ const ResidentialPage = () => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider firstparam='Residential' endpoint="api/listings"
-    render={data => 
+    render={data =>
       <div>
             <Helmet>
               <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -103,7 +103,7 @@ const SoldPage = () => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider firstparam='Sold' endpoint="api/listings"
-    render={data => 
+    render={data =>
       <div>
             <Helmet>
               <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -120,7 +120,7 @@ const AboutPage = () => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider endpoint="api/about"
-    render={data => 
+    render={data =>
       <div>
             <Helmet>
               <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
@@ -136,7 +136,7 @@ const AgentPage = (props) => {
   $('body, html').css({'overflow-y': 'visible'})
   return (
   <DataProvider  endpoint="api/agents"
-    render={agents => 
+    render={agents =>
       {
         const agent = pickAgent(props.match.params.name, agents)
         const otherAgents = pluckAgents(props.match.params.name, agents)
@@ -148,7 +148,7 @@ const AgentPage = (props) => {
               <meta name="theme-color" content="#008f68" />
             </Helmet>
             <AgentLayout data={agent} agents={otherAgents}/>
-          </div>  
+          </div>
         )
       }
   } />
@@ -165,9 +165,9 @@ const App = () => (
         <Route exact path="/commercial-property" component={CommercialPage} />
         <Route exact path="/residential-listings" component={ResidentialPage} />
         <Route exact path="/sold-listings" component={SoldPage} />
-        <Route exact path="/estate_property/:name?" component={EstateProperty}/> 
-        <Route exact path="/agents/:name?" component={AgentPage}/> 
-        <Footer/> 
+        <Route exact path="/estate_property/:name?" component={EstateProperty}/>
+        <Route exact path="/agents/:name?" component={AgentPage}/>
+        <Footer/>
       </div>
     </Router>
   </MuiThemeProvider>

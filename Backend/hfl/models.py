@@ -85,10 +85,16 @@ class Listing(models.Model):
     zoning = models.CharField(max_length=100, blank=True)
     agent = models.ForeignKey('Agent', on_delete=models.CASCADE)
     agents = models.ManyToManyField(Agent, related_name='agents', null=True, blank=True)
-    terrastride_src = models.CharField( max_length=80, blank=True, 
-    null=True, 
-    help_text="Paste terrastride linke directly into input. E.G  'https://app.terrastridepro.com/property/34975/map?referer=iframe'")
-
+    terrastride_src = models.CharField(max_length=80, blank=True,
+                                       null=True,
+                                       help_text="Paste terrastride linke directly into "
+                                                 "input. E.G  'https://app.terrastridepro.com"
+                                                 "/property/34975/map?referer=iframe'")
+    three_d_tour_src = models.CharField(max_length=80,
+                                        blank=True,
+                                        null=True,
+                                        help_text="3D Viewer such as: https://app.immoviewer.com/"
+                                                  "portal/tour/1777989?accessKey=5ebb")
     property_type = models.CharField(
         max_length=20, choices=LISTING_TYPES, default='LAND')
     property_type_choices = models.ManyToManyField(PropertyType)
