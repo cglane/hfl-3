@@ -41,8 +41,6 @@ class FlipCardAbout extends Component {
                             {data['button_text']}
                     </span>
                   </div>
-             <div style='max-width: 100%; padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; '><iframe webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' id='iframeTour-1777989' style='position: absolute; top: 0; left:0; width: 100%; height:100%' src='https://app.immoviewer.com/portal/tour/1777989?accessKey=5ebb'></iframe></div>
-
             </div>
 
           </div>
@@ -60,5 +58,3 @@ class FlipCardAbout extends Component {
 }
 
 export default FlipCardAbout;
-
-
