@@ -34,14 +34,17 @@ class FlipCardAbout extends Component {
           <div ref={ (frontElement) => this.frontElement = frontElement}
                 className="front-page-wrapper" key="front">
             <h1 className="hide-on-small-only">{data['header']}</h1>
-            <div> 
+            <div>
                 <p className="left-align about-description"> {data['description1']}</p>
                   <div onClick={this.handleClick} className="front-card-explore text-center">
                     <span>
                             {data['button_text']}
                     </span>
                   </div>
+             <div style='max-width: 100%; padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; '><iframe webkitAllowFullScreen mozallowfullscreen allowFullScreen frameborder='0' id='iframeTour-1777989' style='position: absolute; top: 0; left:0; width: 100%; height:100%' src='https://app.immoviewer.com/portal/tour/1777989?accessKey=5ebb'></iframe></div>
+
             </div>
+
           </div>
             <div ref={ (backElement) => this.backElement = backElement}
             onClick={this.handleClick} key="back">
