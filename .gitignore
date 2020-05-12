@@ -26,3 +26,4 @@ Backend/hfl/*.pyc
 .env
 hfl.sql
 Backend/frontend/static
+Backend/.env*

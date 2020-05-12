@@ -34,7 +34,7 @@ class FlipCardAbout extends Component {
           <div ref={ (frontElement) => this.frontElement = frontElement}
                 className="front-page-wrapper" key="front">
             <h1 className="hide-on-small-only">{data['header']}</h1>
-            <div> 
+            <div>
                 <p className="left-align about-description"> {data['description1']}</p>
                   <div onClick={this.handleClick} className="front-card-explore text-center">
                     <span>
@@ -42,6 +42,7 @@ class FlipCardAbout extends Component {
                     </span>
                   </div>
             </div>
+
           </div>
             <div ref={ (backElement) => this.backElement = backElement}
             onClick={this.handleClick} key="back">
@@ -57,5 +58,3 @@ class FlipCardAbout extends Component {
 }
 
 export default FlipCardAbout;
-
-

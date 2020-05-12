@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import key from "weak-key";
+import Iframe from 'react-iframe'
 import {mainImage, orderByWeight} from '../helpers'
 import Chips from './Chips'
 import CustomCarousel from './Carousel'
@@ -38,6 +39,7 @@ const PropertyLayout = ({ data }) =>
             <div className="col-md-12"></div>
         </div>
         <h2 className="text-center">{data['property_name'] || data['street_address']}</h2>
+
         <div className="row keyword-block-row">
             <div className="col-md-12 text-center">
                 <div className="keyword-block">
@@ -54,15 +56,35 @@ const PropertyLayout = ({ data }) =>
                 </div>
 
                 <div className="row text-center">
-                    <div className="col-md-10 text-centers">
-                        <AgentCard data={data['agent']} customClass="agent-card" streetAddress={data['street_address']}/>
-                    </div>
+                    {
+                      (data.three_d_tour_src)?
+                      <div className="col-md-12">
+                        <div className="col-md-5 text-centers">
+                            <AgentCard data={data['agent']} customClass="agent-card" streetAddress={data['street_address']}/>
+                        </div>
+                      <div className="col-md-7">
+                        <Iframe url={data['three_d_tour_src']}
+                          width="100%"
+                          height="400px"
+                          id="myId"
+                          className="myClassname"
+                          display="initial"
+                          position="relative"/>
+                        </div>
+                      </div>
+                      :
+                        <div className="col-md-10 text-centers">
+                            <AgentCard data={data['agent']} customClass="agent-card" streetAddress={data['street_address']}/>
+                        </div>
+                    }
                 </div>
+
             </div>
             {/* Holds listing information */}
             <div className="col-md-4 property-info-wrapper">
                 <FlipCardListing data={data}/>
             </div>
+
        </div>
 
        {/* Other Listings */}
