@@ -60,7 +60,7 @@ const PropertyLayout = ({ data }) =>
                       (data.three_d_tour_src)?
                       <div className="col-md-12">
                         <div className="col-md-5 text-centers">
-                            <AgentCard data={data['agent']} customClass="agent-card" streetAddress={data['street_address']}/>
+                            <AgentCard data={data['agent']} streetAddress={data['street_address']}/>
                         </div>
                       <div className="col-md-7">
                         <Iframe url={data['three_d_tour_src']}
