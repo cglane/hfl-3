@@ -9,7 +9,12 @@ import DataProvider from './DataProvider'
 import AgentCard from './AgentCard'
 import FlipCardListing from './FlipCardListing'
 import OtherListings from'./OtherListings'
-
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 
 const PropertyLayout = ({ data }) =>
 {
@@ -57,7 +62,7 @@ const PropertyLayout = ({ data }) =>
 
                 <div className="row text-center">
                     {
-                      (data.three_d_tour_src)?
+                      (data.three_d_tour_src && isBrowser)?
                       <div className="col-md-12">
                         <div className="col-md-5 text-centers">
                             <AgentCard data={data['agent']} streetAddress={data['street_address']}/>
