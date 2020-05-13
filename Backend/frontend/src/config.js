@@ -2,7 +2,7 @@ import React from 'react';
 const config = {
     // CHANGE DOMAIN FOR PRODUCTION
     // 'domain': 'https://www.hflcharleston.com',
-//    'domain': 'http://staging.yp8hg5fd3q.us-east-1.elasticbeanstalk.com',
+   // 'domain': 'http://staging.yp8hg5fd3q.us-east-1.elasticbeanstalk.com',
    'domain': 'http://localhost:8000',
     'agentsPath': 'agents',
     'shortText': 120,
@@ -14,7 +14,7 @@ const config = {
         'googlePlus': 'https://www.youtube.com/channel/UCEZ5xDIq0Tr4dfO0WhnDz6A',
         'linkedIn': 'https://www.linkedin.com/company/8509331/',
         'youtube': 'https://www.youtube.com/channel/UCEZ5xDIq0Tr4dfO0WhnDz6A',
-        
+
     },
     'price_range': ['$0-$100,000',  '$100,000-$500,000', '$500,000-$1,000,000', '$1,000,000-$10,000,000'],
     'copyright': '© 2019 Holcombe Fair & Lane, LLC',
@@ -42,7 +42,7 @@ const config = {
             'name': 'About',
             'path': '/about'
         },
-       
+
     ],
     'contactFields': [
         {
