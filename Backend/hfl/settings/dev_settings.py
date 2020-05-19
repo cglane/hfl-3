@@ -57,14 +57,8 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
 
 # Email
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ['EMAIL_USER']
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
-
-EMAIL_PORT = 587
-
+SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
+FROM_EMAIL = 'emailshfl@gmail.com'
 # Application definition
 
 INSTALLED_APPS = [
