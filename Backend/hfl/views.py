@@ -19,6 +19,8 @@ from hfl.serializers import (ListingSerializer,
 							 AboutPageSerializer)
 from rest_framework import viewsets, generics
 from django.utils.decorators import method_decorator
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
 @csrf_exempt    
 def email_view(request):
@@ -26,7 +28,6 @@ def email_view(request):
 		body_unicode = request.body.decode('utf-8')
 		body = json.loads(body_unicode)
 		try:
-			text_content = ""
 			html_content = "\
 				<html>\
 					<span>Name:{0}</span><br>\
@@ -35,12 +36,17 @@ def email_view(request):
 					<span>Message:{3}</span><br>\
 					<span>Address:{4}</span><br>\
 				</html>".format(body['name'], body['email'], body['phoneNumber'], body['message'], body['streetAddress'])
-			msg = EmailMultiAlternatives("New Lead", text_content, "info@hfl.com", [body['agentEmail']])
-			msg.attach_alternative(html_content, "text/html")
-			msg.send()
+			message = Mail(
+				from_email=getattr(settings, 'FROM_EMAIL'),
+				to_emails=body['agentEmail'],
+				subject="New Lead",
+				html_content=html_content)
+
+			sg = SendGridAPIClient(getattr(settings, 'SENDGRID_API_KEY'))
+			sg.send(message)
+
 			return HttpResponse(status=201)
 		except Exception as e:
-			print(e, 'exception')
 			return HttpResponse(str(e), status=403)
 
 
