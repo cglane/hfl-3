@@ -75,15 +75,11 @@ if os.environ['ENVIRONMENT'] == 'production':
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     CSRF_COOKIE_SECURE = True
+
+# Email
+SENDGRID_API_KEY = os.environ['SENDGRID_API_KEY']
+FROM_EMAIL = 'emailshfl@gmail.com'
 # Application definition
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = os.environ['EMAIL_USER']
-EMAIL_HOST_PASSWORD = os.environ['EMAIL_PASSWORD']
-EMAIL_PORT = 465
-
 INSTALLED_APPS = [
     'django_seo_js',
     'jet',

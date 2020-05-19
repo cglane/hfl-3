@@ -3,6 +3,9 @@ import ReactCardFlip from 'react-card-flip';
 import $ from 'jquery'
 import {detailsData} from '../helpers'
 import Collection from './Collection'
+import {
+  isMobile
+} from "react-device-detect";
 class FlipCardListing extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +35,7 @@ class FlipCardListing extends Component {
         <ReactCardFlip isFlipped={this.state.isFlipped}>
           <div className="front-page-wrapper" key="front">
             <h1 className="hide-on-small-only"  >{data.street_address}</h1>
-            <div> 
+            <div>
                 <h4>{data.status}</h4>
                 <p className="left-align garamond-text"> {data.description}</p>
                   <a onClick={this.handleClick} className="waves-effect waves-light btn-large blue-background">
@@ -58,7 +61,16 @@ class FlipCardListing extends Component {
                     :
                     ''
                   }
- 
+                  {
+                    (data.three_d_tour_src && isMobile)?
+                    <a className="waves-effect waves-light btn-large blue-background"
+                    target="_blank"
+                    href={data.three_d_tour_src}>
+                                        Virtual Tour
+                    </a>
+                    :
+                    ""
+                  }
             </div>
           </div>
             <div onClick={this.handleClick} key="back">
@@ -74,5 +86,3 @@ class FlipCardListing extends Component {
 }
 
 export default FlipCardListing;
-
-

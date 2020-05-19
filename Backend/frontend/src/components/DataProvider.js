@@ -39,7 +39,7 @@ class DataProvider extends Component {
         }
         return response.json()
       })
-      .then(data => { this.setState({ data: data, loaded: true })})
+      .then(data => {this.setState({ data: data, loaded: true })})
       .catch(err => console.log(err, 'err'))
 
 
