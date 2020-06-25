@@ -16,7 +16,7 @@ Backend/venv
 venv
 Backend/media
 Backend/hfl/..media
-/node_modules
+node_modules
 .idea
 Backend/hfl/*.pyc
 # Elastic Beanstalk Files

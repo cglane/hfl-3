@@ -25,10 +25,7 @@
 		<loc>https://www.hflcharleston.com/land-listings</loc>
   </url>
   <url>
-		<loc>https://www.hflcharleston.com/estate_property/Brookland-Plantation</loc>
-  </url>
-  <url>
-		<loc>https://www.hflcharleston.com/estate_property/Logbridge-Farm</loc>
+		<loc>https://www.hflcharleston.com/estate_property/Brookland</loc>
   </url>
    <url>
 		<loc>https://www.hflcharleston.com/estate_property/6-Breakaway-Trail</loc>
@@ -63,12 +60,6 @@
 	<url>
 		<loc>https://www.hflcharleston.com/estate_property/1-Highway-165</loc>
 	</url>
-	<url>
-<loc>https://www.hflcharleston.com/estate_property/6620-Bears-Bluff-Road</loc>
-	</url>
-<url>
-<loc>https://www.hflcharleston.com/estate_property/Thornley-Tract</loc>
-	</url>
 <url>
 <loc>https://www.hflcharleston.com/estate_property/1980-Longcreek</loc>
 	</url>
@@ -99,11 +90,23 @@
 <url>
 <loc>https://www.hflcharleston.com/estate_property/6016-Selkirk-Plantation-Road</loc>
 	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/5751-Church-Flats-Road</loc>
+	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/0-Wiggins-Road</loc>
+	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/904-Dupre-Road</loc>
+	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/0-Dupre-Road</loc>
+	</url>
 	<url>
 		<loc>https://www.hflcharleston.com/commercial-property</loc>
 	</url>
 	<url>
-		<loc>https://www.hflcharleston.com/estate_property/2143-Heriot-St-Suite-F</loc>
+	<loc>https://www.hflcharleston.com/estate_property/2147-Heriot-St-Suite-D</loc>
 	</url>
 	<url>
 		<loc>https://www.hflcharleston.com/estate_property/138-Spring-Street</loc>
@@ -111,9 +114,7 @@
 	<url>
 		<loc>https://www.hflcharleston.com/estate_property/1159-Cainhoy-Road</loc>
 	</url>
-<url>
-<loc>https://www.hflcharleston.com/estate_property/Dayco-Building</loc>
-	</url>
+
 <url>
 <loc>https://www.hflcharleston.com/estate_property/4236-Pace-Street-Suite-B</loc>
 	</url>
@@ -209,9 +210,19 @@
 <url>
 <loc>https://www.hflcharleston.com/estate_property/6960-Bears-Bluff-Road</loc>
 	</url>
-
+  	<url>
+		<loc>https://www.hflcharleston.com/estate_property/Logbridge-Farm</loc>
+ 	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/6620-Bears-Bluff-Road</loc>
+	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/Thornley-Tract</loc>
+	</url>
+<url>
+<loc>https://www.hflcharleston.com/estate_property/Dayco-Building</loc>
+	</url>
 
 </urlset>
 
 
-s
