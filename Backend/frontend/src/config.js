@@ -1,9 +1,9 @@
 import React from 'react';
 const config = {
     // CHANGE DOMAIN FOR PRODUCTION
-    // 'domain': 'https://www.hflcharleston.com',
+    'domain': 'https://www.hflcharleston.com',
    // 'domain': 'http://staging.yp8hg5fd3q.us-east-1.elasticbeanstalk.com',
-   'domain': 'http://localhost:8000',
+   // 'domain': 'http://localhost:8000',
     'agentsPath': 'agents',
     'shortText': 120,
     'longText': 200,
