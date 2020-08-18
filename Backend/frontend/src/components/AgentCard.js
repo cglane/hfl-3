@@ -10,7 +10,7 @@ const tmpCallGtag = (agentLastName, streetAddress) => {
   console.log(agentLastName, streetAddress, 'address and agent name')
   if(agentLastName == config['tmpGtagAgent'] && streetAddress == config['tmpGtagAddress']){
       console.log('Temp GTag Clicked')
-      window.gtag_report_conversion(window.location.pathname)
+      window.gtag_report_conversion()
   }
 }
 
