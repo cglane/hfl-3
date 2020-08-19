@@ -47,7 +47,7 @@ const AgentCard = ({ data, customClass, streetAddress }) =>
                       </i>
                     </a>
                 </li>
-                <li key={2}>
+                <li key={2} onClick={(e)=>tmpCallGtag(data['last_name'], streetAddress)}>
                   <CustomModal agent={data} streetAddress={streetAddress}></CustomModal>
                 </li>
                 <li key={3} onClick={(e)=>tmpCallGtag(data['last_name'], streetAddress)}>
