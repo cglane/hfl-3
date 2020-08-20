@@ -6,6 +6,14 @@ import {Card,CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import CustomModal from './CustomModal'
 import config from '../config'
 
+const tmpCallGtag = (agentLastName, streetAddress) => {
+  console.log(agentLastName, streetAddress, 'address and agent name')
+  if(agentLastName == config['tmpGtagAgent'] && streetAddress == config['tmpGtagAddress']){
+      console.log('Temp GTag Clicked')
+      window.gtag_report_conversion()
+  }
+}
+
 const AgentCard = ({ data, customClass, streetAddress }) =>
   !data ? (
     <p>No Data</p>
@@ -32,17 +40,17 @@ const AgentCard = ({ data, customClass, streetAddress }) =>
               <CardText>
               {/* {data['description'].slice(0, config['longText']) + '.......'} */}
                 <ul className="agent-contact-links-card text-center">
-                  <li key={1}>
+                  <li key={1} onClick={(e)=>tmpCallGtag(data['last_name'], streetAddress)}>
                     <a href={`tel:+1${data['mobile_phone_number']}`}>
                       <i className="material-icons">
                           phone
                       </i>
                     </a>
                 </li>
-                <li key={2}>
+                <li key={2} onClick={(e)=>tmpCallGtag(data['last_name'], streetAddress)}>
                   <CustomModal agent={data} streetAddress={streetAddress}></CustomModal>
                 </li>
-                <li key={3}>
+                <li key={3} onClick={(e)=>tmpCallGtag(data['last_name'], streetAddress)}>
                   <a href={`mailto:${data['email']}?Subject=Real%20Estate`} target="_top">
                     <i className="material-icons">
                       email
