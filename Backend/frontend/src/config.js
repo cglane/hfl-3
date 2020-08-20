@@ -7,6 +7,8 @@ const config = {
     'agentsPath': 'agents',
     'shortText': 120,
     'longText': 200,
+    'tmpGtagAgent': 'Sinkler II',
+    'tmpGtagAddress': '5827 Grimshaw Road',
     'brandImg': 'https://s3.amazonaws.com/www.hflcharleston.com/hfl-logo.jpg',
     'socialMedia': {
         'instagram': 'https://www.instagram.com/holcombefairlane/',
