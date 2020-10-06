@@ -14,12 +14,12 @@ class ListingsLayoutDynamic extends Component {
         displayListing: displayListing(this.props.data)
       };
       this.updateFilter = this.updateFilter.bind(this);
-      
+
   }
   updateFilter(activeFilter){
     const filteredListings = filterListings(activeFilter, this.props.data)
     this.setState({
-      filteredListings, 
+      filteredListings,
     })
   }
   displayListings(data){
@@ -44,13 +44,10 @@ class ListingsLayoutDynamic extends Component {
             <div className="col-md-12 text-center">
                 <div className="keyword-block">
                 {
-                    (data && data.length > 0)?
                     <CustomAutoComplete
                     filters={this.state.filters}
                     updateFilter={this.updateFilter}
                     searchText="Search location, features, or price"/>
-                    :
-                    'Nothing to Display'
                 }
 
                 </div>
@@ -75,5 +72,3 @@ class ListingsLayoutDynamic extends Component {
 }
 
 export default ListingsLayoutDynamic;
-
-

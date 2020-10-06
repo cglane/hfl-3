@@ -7,9 +7,7 @@ import CustomModal from './CustomModal'
 import config from '../config'
 
 const tmpCallGtag = (agentLastName, streetAddress) => {
-  console.log(agentLastName, streetAddress, 'address and agent name')
   if(agentLastName == config['tmpGtagAgent'] && streetAddress == config['tmpGtagAddress']){
-      console.log('Temp GTag Clicked')
       window.gtag_report_conversion()
   }
 }
@@ -24,15 +22,15 @@ const AgentCard = ({ data, customClass, streetAddress }) =>
           <CardMedia
             overlay={
             <CardTitle className="hover-hide-background agent-card-name"
-                        title={`${data['first_name']} ${data['last_name']}`} 
+                        title={`${data['first_name']} ${data['last_name']}`}
                          />}
           >
           {
-            <img 
+            <img
               src={data['avatar']}
-              alt="" /> 
+              alt="" />
           }
-            
+
           </CardMedia>
           </Link>
               <div className="small-description">
@@ -59,7 +57,7 @@ const AgentCard = ({ data, customClass, streetAddress }) =>
                 </li>
               </ul>
               </CardText>
-            </div>            
+            </div>
         </Card>
   </div>
   );

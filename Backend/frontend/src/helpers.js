@@ -1,6 +1,6 @@
 
 import {
-    map, 
+    map,
     keys,
     addIndex,
     is,
@@ -20,7 +20,7 @@ import config from './config'
 const pickAgent = (name, agents) => find(propEq('url_path', name))(agents)
 
 const pluckAgents = (name, agents) => {
-  
+
   return filter((x) => {
     if(!propEq('url_path', name)(x)){
       return true
@@ -41,7 +41,7 @@ const getFilters = (listArray, delimeter=',') => {
   return filters
   }
   const dollarToInt = (dollarString) => {
-    const price_no_commas = dollarString.replace(',', '')
+    const price_no_commas = dollarString.replaceAll(',', '')
     const price_no_dollar = price_no_commas.replace('$', '')
     try {
       return parseInt(price_no_dollar)
@@ -74,7 +74,7 @@ const getFilters = (listArray, delimeter=',') => {
         const price = (x.price_formatted || x.price_sqft_formatted)
         try{
           if(
-            contains(filter_lower,join(' ', x.features).toLowerCase()) 
+            contains(filter_lower,join(' ', x.features).toLowerCase())
           || contains(filter_lower, x.street_address.toLowerCase())
           || contains(filter_lower, x.property_name.toLowerCase())
           || contains(filter_lower, price)
@@ -83,7 +83,7 @@ const getFilters = (listArray, delimeter=',') => {
           }
         }
           catch{
-            console.log('hello ')
+            console.log('Error parsing listings')
           }
       })(listings)
     }
@@ -93,14 +93,10 @@ const getFilters = (listArray, delimeter=',') => {
 const pluckListings = (idxList, listings)=>{
   let arr = []
   for (let index = 0; index < idxList.length; index++) {
-    if(contains(index, idxList)){
       arr.push(listings[idxList[index]])
-    }
   }
-  if(arr.length > 0){
     return arr
-  }
-  return listings
+
 }
 const displayListing = (listings) => {
   let preferredListing =  find(propEq('display_listing', true))(listings)
@@ -131,7 +127,7 @@ const mainImage = (listing) => {
     objKeys.splice(objKeys.indexOf('terrastride_src'), 1)
     objKeys.splice(objKeys.indexOf('html_description'), 1)
     objKeys.splice(objKeys.indexOf('html_title'), 1)
-  
+
     const returnList = []
     map((x) => {
       if(!is(Object, obj[x]) && obj[x]) {
