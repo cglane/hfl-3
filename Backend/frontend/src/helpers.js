@@ -92,7 +92,6 @@ const getFilters = (listArray, delimeter=',') => {
 
 const pluckListings = (idxList, listings)=>{
   let arr = []
-  console.log(idxList, listings)
   for (let index = 0; index < idxList.length; index++) {
       arr.push(listings[idxList[index]])
   }

@@ -14,6 +14,7 @@ class CustomAutoComplete extends Component {
       maxSearchResults={5}
       fullWidth={false}
       onNewRequest={this.props.updateFilter}
+      
     />
     )
   }
