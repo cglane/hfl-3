@@ -4,6 +4,9 @@ import {mapIndexed, mainImage} from '../helpers'
 import ReactPlayer from 'react-player'
 import {listingPath} from '../helpers'
 import Loading from './Loading';
+import {
+    isMobile
+  } from "react-device-detect";
 
 const videoState = {
     playing: true,
@@ -69,9 +72,9 @@ const LandingLayout = ({ data }) =>
                                 </div>
                                
                             </div>
-                            <img className="react-player-image"src={mainImage(x['listing'])}></img>
+                            
                             {
-                                (x['video'] && x['video']['get_absolute_image_url'])?
+                                (x['video'] && x['video']['get_absolute_image_url'] && !isMobile)?
                                     <ReactPlayer
                                             className={`react-player`}
                                             key = {itr}
@@ -79,7 +82,7 @@ const LandingLayout = ({ data }) =>
                                         {...videoState}
                                     />
                                     :
-                                    ''
+                                    <img className="react-player-image"src={mainImage(x['listing'])}></img>
                             }
                             
                     </div>
