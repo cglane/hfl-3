@@ -31,6 +31,7 @@ a{
         height: auto;
     }
 }
+
 .background-image-padding{
     height: 40vh;
 }
@@ -473,7 +474,11 @@ a{
         transition:width 2s !important;
       }    
     }
-  
+#loading-two{
+    opacity: 0;
+}
+
+
 .video-wrapper{
     position: fixed;
     left: 0px;
@@ -487,7 +492,7 @@ a{
 }
 
 .video-0{
-    opacity: 1;
+    opacity: 1; 
     z-index: 1;
 }
 
@@ -649,6 +654,13 @@ a{
        margin: 10px;
        vertical-align: top;
        display: inline-block;
+    }
+}
+@media only screen and (max-width: 600px){
+    .text-center{
+        h3{
+            font-size: 2rem;
+        }
     }
 }
 .control-arrow {
