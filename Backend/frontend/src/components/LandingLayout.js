@@ -18,6 +18,13 @@ const onPlay = (itr) => {
         }, 100)
     }
 }
+const onLoad = () => {
+  setTimeout(()=> {
+      $("#loading-two").animate({"opacity": 1}, 2500, function(){
+          $("#loading-one").css({"opacity": 0});
+      });
+  }, 100)
+}
 const videoState = {
     playing: true,
     volume: 0.0,
@@ -30,7 +37,7 @@ const videoState = {
     width: '2200px',
     height:'auto',
   }
-  
+
 const LandingLayout = ({ data }) =>
 {
   return (
@@ -55,7 +62,7 @@ const LandingLayout = ({ data }) =>
 
 
                                                 {/* <li> <span><svg className='svg-down'xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"/></svg></span></li> */}
-                    
+
                                             </ul>
                                         </div>
                                         <div className="col-md-4 text-center">
@@ -71,21 +78,21 @@ const LandingLayout = ({ data }) =>
                                             </div>
                                             <div className="row text-center">
                                                 <div className="col-md-12">
-                                                    <a href={listingPath(x['listing'])}> 
+                                                    <a href={listingPath(x['listing'])}>
                                                         <div className="status-button">
                                                             <span>Explore</span>
                                                         </div>
                                                     </a>
-            
+
                                                 </div>
-                            
+
                                             </div>
                                         </div>
                                         <div className="col-md-4 description-landing text-center"><p>{x.description}</p></div>
                                     </div>
-                                
+
                                 </div>
-                                
+
                                 {
                                     (x['video'] && x['video']['get_absolute_image_url'] && !isMobile)?
                                         <ReactPlayer
@@ -96,9 +103,9 @@ const LandingLayout = ({ data }) =>
                                             {...videoState}
                                         />
                                         :
-                                        <img className="react-player-image"src={mainImage(x['listing'])}></img>
+                                        <img className="react-player-image" onLoad={onLoad()} src={mainImage(x['listing'])}></img>
                                 }
-                                
+
                         </div>
                         )
                     })(data)
@@ -106,7 +113,7 @@ const LandingLayout = ({ data }) =>
             </div>
             </div>
       </div>
-       
+
   )
 }
   LandingLayout.propTypes = {
