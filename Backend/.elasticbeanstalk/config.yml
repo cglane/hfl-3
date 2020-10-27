@@ -1,6 +1,6 @@
 branch-defaults:
   default:
-    environment: staging
+    environment: staging-3
   master:
     environment: production
     group_suffix: null

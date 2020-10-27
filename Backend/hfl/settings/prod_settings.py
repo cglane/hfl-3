@@ -66,6 +66,7 @@ ALLOWED_HOSTS = ['staging.yp8hg5fd3q.us-east-1.elasticbeanstalk.com',
                 'www.hflcharleston.com',
                  'hflcharleston.com',
                  'production.yp8hg5fd3q.us-east-1.elasticbeanstalk.com',
+                 'staging-3.us-east-1.elasticbeanstalk.com'
                  ]
 ALLOWED_DOMAINS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
