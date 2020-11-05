@@ -19,4 +19,4 @@ aws s3 cp Backend/frontend/static/frontend/main.js s3://hfl-static-backend/stati
 
 cd ./Backend
 
-eb deploy staging
+eb deploy staging-3
