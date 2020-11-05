@@ -22,8 +22,8 @@ const LandingPage = () => {
                   render={data =>
                     <div>
                        <Helmet>
-                        <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
-                        <meta name="description" content="Discover your next South Carolina Lowcountry home or plantation! HFL is a real estate firm serving commercial and recreational clients for over 80 years." />
+                        <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
+                        <meta name="description" content="Discover your next rural estate in the beautiful South Carolina Lowcountry! HFL is a real estate firm that has been representing landowners in real estate and land management since 1927." />
 
                         <meta name="theme-color" content="#008f68" />
                       </Helmet>
@@ -58,7 +58,7 @@ const LandPage = () => {
     render={data =>
       <div>
             <Helmet>
-              <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
+              <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
               <meta name="description" content='Land Listings' />
               <meta name="theme-color" content="#008f68" />
             </Helmet>
@@ -74,7 +74,7 @@ const CommercialPage = () => {
     render={data =>
       <div>
             <Helmet>
-              <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
+              <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
               <meta name="description" content='Commercial Listings' />
               <meta name="theme-color" content="#008f68" />
             </Helmet>
@@ -90,7 +90,7 @@ const ResidentialPage = () => {
     render={data =>
       <div>
             <Helmet>
-              <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
+              <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
               <meta name="description" content='' />
               <meta name="theme-color" content="#008f68" />
             </Helmet>
@@ -106,7 +106,7 @@ const SoldPage = () => {
     render={data =>
       <div>
             <Helmet>
-              <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
+              <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
               <meta name="description" content='Sold Listings' />
               <meta name="theme-color" content="#008f68" />
             </Helmet>
@@ -123,7 +123,7 @@ const AboutPage = () => {
     render={data =>
       <div>
             <Helmet>
-              <title>Holcombe, Fair & Lane | Charleston, SC | Plantations, Recreational Land and Commercial Real Estate</title>
+              <title>Holcombe, Fair & Lane | Charleston, SC | Rural Recreational Land, Waterfront Estates and Commercial Property</title>
               <meta name="description" content={data['description']} />
               <meta name="theme-color" content="#008f68" />
             </Helmet>
