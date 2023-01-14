@@ -39,7 +39,7 @@
     "react-dom": "^16.6.3",
     "weak-key": "^1.0.1",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "dev": "webpack --mode development  ./Backend/frontend/src/index.js --output ./Backend/frontend/static/frontend/main.js --watch",
